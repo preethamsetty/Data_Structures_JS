@@ -1,0 +1,11 @@
+Strings in JavaScript are sequences of characters enclosed within quotation marks. 
+They can be created using either single or double quotes:
+---------------------------------
+
+const str1 = "Hello, world!";
+const str2 = 'This is a string';
+
+-----------------------------------
+
+Strings in JavaScript are immutable, meaning their values cannot be changed once created. 
+Any operations that modify strings create new strings.
