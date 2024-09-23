@@ -1,0 +1,10 @@
+Objects in JavaScript:
+---------------------
+Objects in JavaScript are fundamental data structures that represent entities with properties and methods. 
+They are unordered collections of key-value pairs, where keys are strings or symbols, and values can be of any 
+data type.
+
+Creating Objects:
+--------------------
+There are two primary ways to create objects in JavaScript:
+
