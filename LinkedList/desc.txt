@@ -1,0 +1,98 @@
+A Linked List is a linear data structure where each element (called a "node") contains:
+--------------------------------------------------------------------------------------
+Data: The value of the node.
+Next: A reference (or pointer) to the next node in the list.
+Unlike arrays, elements in a linked list are not stored in contiguous memory locations. Each node points to the next, forming a chain of nodes.
+
+
+Types of Linked Lists:
+----------------------
+1. Singly Linked List: Each node points to the next node, and the last node points to null.
+2. Doubly Linked List: Each node points to both the next and the previous node.
+3. Circular Linked List: The last node points back to the first node, forming a loop.
+
+
+Singly Linked List Implementation in JavaScript:
+-----------------------------------------------
+1. Node Structure:
+Each node has two parts:
+value: Stores the data.
+next: Stores the reference to the next node (initially null).
+
+2. Linked List Structure:
+A head pointer to the first node.
+A tail pointer to the last node (optional, for efficient tail operations).
+
+---------------------------------------------------------------------------
+
+Key Operations in a Singly Linked List:
+---------------------------------------
+
+1. Append: Add a node to the end of the list.
+Time Complexity: O(n) (needs to traverse the entire list).
+
+2. Prepend: Add a node to the beginning of the list.
+Time Complexity: O(1) (no traversal needed).
+
+3. Remove: Remove a node by value.
+Time Complexity: O(n) (requires traversal to find the node).
+
+4. Search: Traverse the list to find an element.
+Time Complexity: O(n).
+
+5. Print List: Print all elements in the list by traversing it.
+
+
+Advantages of Linked Lists:
+---------------------------
+Dynamic size: Linked lists can grow and shrink in size dynamically, unlike arrays, which have a fixed size.
+Efficient insertions/deletions: Insertions and deletions are efficient compared to arrays, especially for 
+large datasets where shifting elements is costly.
+
+Disadvantages of Linked Lists:
+-------------------------------
+Memory overhead: Each node requires additional memory to store the next reference.
+No random access: Unlike arrays, linked lists do not allow random access to elements, making lookups slower (O(n)).
+
+Doubly Linked List Operations:
+------------------------------
+Forward traversal: Starts from the head.
+Backward traversal: Starts from the tail.
+
+Key Operations in a Circular Linked List:
+-----------------------------------------
+1. Append: Add a new node to the end of the list. The new tail points to the head.
+Time Complexity: O(1) if tail is tracked, O(n) otherwise (to traverse to the end).
+
+2. Remove: Remove a node from the list, adjusting the links to maintain the circular structure.
+Time Complexity: O(n) (requires traversal).
+
+3. Traversal: You can start at any node and follow the next pointers in a circular fashion.
+Time Complexity: O(n).
+
+4. Contains/Search: Traverse the list to find if a value exists.
+Time Complexity: O(n).
+
+Key Points:
+-------------
+1. Circular nature: In a circular linked list, the last node links back to the first node, creating a continuous 
+loop.No null references: Unlike singly or doubly linked lists, the next reference in the last node points to the head, 
+not null.
+2. Traversal: You must be careful to stop traversal at the appropriate point, as there's no natural "end" (i.e., null).
+
+Advantages of Circular Linked Lists:
+------------------------------------
+1. Efficient traversal: Starting from any node, you can visit all nodes in a continuous loop.
+2. Efficient use of memory: Suitable for applications where continuous cycling of data is needed 
+(e.g., round-robin scheduling).
+
+Use Cases:
+-------------
+Round-robin scheduling: In operating systems, tasks are scheduled in a circular fashion.
+Circular buffers: Useful in scenarios like implementing a queue with fixed size or cyclic buffers in networking.
+
+Comparison with Other Linked Lists:
+-----------------------------------
+Singly Linked List: The last node points to null (linear structure).
+Doubly Linked List: Each node has pointers to both previous and next nodes, allowing bidirectional traversal.
+Circular Linked List: The last node points back to the first node, allowing continuous traversal.
