@@ -1,0 +1,20 @@
+Time and Space Complexity in JavaScript:
+----------------------------------------
+When analyzing the performance of an algorithm, we evaluate time complexity and space complexity. 
+These metrics provide insights into how the algorithm scales as input size increases, in terms of time and 
+memory consumption.
+
+1. Time Complexity
+------------------
+Time complexity describes how the runtime of an algorithm changes with respect to the input size. 
+It's measured using Big O notation, which gives an upper bound on the time it will take for an algorithm to complete.
+
+Summary of Big O Notation:
+
+Notation	Description	        Example Use Case
+---------------------------------------------------------------
+O(1)	    Constant time	    Accessing an array element by index
+O(n)	    Linear time	        Looping through an array
+O(log n)	Logarithmic time	Binary search
+O(n²)	    Quadratic time	    Nested loops (e.g., bubble sort)
+O(n!)	    Factorial time	    Recursive permutations
