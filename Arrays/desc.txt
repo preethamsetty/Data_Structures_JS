@@ -1,0 +1,18 @@
+Arrays in JavaScript:
+---------------------
+Arrays are ordered collections of elements in JavaScript. They are dynamic, meaning their size can change at runtime. Arrays can store elements of different data types.
+
+Creating Arrays:
+----------------
+
+1. Literal notation:
+const numbers = [1, 2, 3, 4];
+const fruits = ["apple", "banana", "orange"];
+
+-----------------------------------------------
+
+2. Using the Array constructor:
+const numbers = new Array(1, 2, 3, 4);
+const fruits = new Array("apple", "banana", "orange");
+
+-----------------------------------------------

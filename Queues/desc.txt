@@ -1,0 +1,13 @@
+Key Operations:
+------------------------------------------------------------------
+enqueue(element): Adds an element to the end of the queue.
+dequeue(): Removes and returns the first element from the queue.
+peek(): Gets the first element without removing it.
+isEmpty(): Checks if the queue is empty.
+
+Key Points:
+--------------------------------
+Queues follow the FIFO principle.
+They are often implemented using arrays.
+Common operations include enqueue, dequeue, and peek.
+Queues have various applications in different areas of programming.
