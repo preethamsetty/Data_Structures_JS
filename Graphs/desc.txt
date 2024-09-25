@@ -1,0 +1,15 @@
+Graphs are a versatile data structure used to represent relationships between pairs of objects. 
+They consist of nodes (also called vertices) connected by edges. Graphs can be directed or undirected, 
+weighted or unweighted, and can have cycles or be acyclic. Here's a breakdown of the key components and how to 
+implement graphs in JavaScript:
+
+Key Components:
+---------------
+Nodes (Vertices): The individual elements in a graph.
+Edges: The connections between nodes. In directed graphs, edges have a direction; in undirected graphs, they do not.
+Weights: In weighted graphs, edges have values (weights) that represent the cost or distance between nodes.
+Types of Graphs
+Directed Graph: Edges have a direction, indicating a one-way relationship.
+Undirected Graph: Edges do not have a direction, indicating a bidirectional relationship.
+Weighted Graph: Edges carry weights representing costs, distances, or other values.
+Unweighted Graph: Edges do not have weights; all edges are considered equal.
