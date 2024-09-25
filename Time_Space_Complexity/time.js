@@ -55,3 +55,30 @@ function binarySearch(arr, target) {
 
 binarySearch([1, 2, 3, 4, 5, 6, 7], 5); // O(log n)
 //------------------------------------------------------------------------------------
+
+// Exponential Time – O(2ⁿ)
+// Description: The running time doubles with each additional input. Often seen in algorithms that solve problems using brute force, like the subset sum problem or the naive recursive solution to the Fibonacci sequence.
+// Example: Recursive solution for Fibonacci numbers.
+
+function fibonacci(n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2); // O(2^n)
+}
+
+//--------------------------------------------------------------------------------------
+
+// Factorial Time – O(n!)
+// Description: The running time grows factorially with the size of the input. Seen in problems like the traveling salesman or generating all permutations.
+// Example: Generating all permutations of a string.
+
+function permute(str, l, r) {
+    if (l === r) console.log(str);
+    else {
+        for (let i = l; i <= r; i++) {
+            str = swap(str, l, i);
+            permute(str, l + 1, r);
+            str = swap(str, l, i);
+        }
+    }
+}
+//---------------------------------------------------------------------------------------

@@ -18,3 +18,17 @@ O(n)	    Linear time	        Looping through an array
 O(log n)	Logarithmic time	Binary search
 O(n²)	    Quadratic time	    Nested loops (e.g., bubble sort)
 O(n!)	    Factorial time	    Recursive permutations
+
+
+----------------------------------------------------------------
+
+Summary of Time Complexities:
+----------------------------
+O(1) – Constant Time
+O(log n) – Logarithmic Time
+O(n) – Linear Time
+O(n log n) – Linearithmic Time
+O(n²) – Quadratic Time
+O(n³) – Cubic Time
+O(2ⁿ) – Exponential Time
+O(n!) – Factorial Time
